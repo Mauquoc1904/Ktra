@@ -1,0 +1,131 @@
+/* Đặt cấu trúc cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container,
+.list-container {
+  margin-bottom: 30px;
+}
+
+/* Phần hiển thị lỗi */
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Phần form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Phần danh sách sinh viên */
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-list img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.student-list p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.student-list button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.student-list button .edit {
+  background-color: #28a745;
+}
+
+.student-list button .delete {
+  background-color: #dc3545;
+}
+
+.student-list button.edit:hover {
+  background-color: #218838;
+}
+
+.student-list button.delete:hover {
+  background-color: #c82333;
+}
+
+
+.btn-delete {
+  background-color: #dc3545;
+
+}
